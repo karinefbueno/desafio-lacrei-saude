@@ -5,7 +5,7 @@ import { HeaderStyled, ContainerHeader, LoginMobile, Login } from './styles';
 
 const ajuda = "https://lacreisaude.com.br/ajuda/";
 const quemSomos = "https://lacreisaude.com.br/quem-somos/";
-const entrar = "https://lacreisaude.com.br/selecionar-pessoa/"
+const entrar = "https://lacreisaude.com.br/selecionar-pessoa/";
 
 function Header() {
   return (
@@ -15,12 +15,16 @@ function Header() {
         <div>
           <LoginMobile>
             <a href={ajuda}><AiOutlineQuestionCircle /></a>
-            <a href={entrar}><button><BsPerson /></button></a>
+            <a href={entrar}>
+              <button><BsPerson /></button>
+            </a>
           </LoginMobile>
           <Login>
             <a href={quemSomos}>Quem somos</a>
             <a href={ajuda}>Ajuda</a>
-            <a href={entrar}> <button>Entrar</button></a>
+            <a href={entrar}>
+              <button>Entrar</button>
+            </a>
           </Login>
         </div>
       </HeaderStyled>

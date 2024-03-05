@@ -4,6 +4,7 @@ export const ContainerHeader = styled.div`
 display: flex;
 justify-content:center;
 align-items: center;
+min-width: 430px;
 `;
 
 export const HeaderStyled = styled.header`
@@ -15,7 +16,7 @@ align-items: center;
 justify-content: space-between;
 background: linear-gradient(180deg, #F5FFFB 31.04%, #FFFFFF 100%);
 height: 96px;
-min-width: 360px;
+
 
 @media (max-width: 771px) {
     .login-button {
