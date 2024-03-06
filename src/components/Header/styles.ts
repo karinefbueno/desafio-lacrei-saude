@@ -17,12 +17,6 @@ justify-content: space-between;
 background: linear-gradient(180deg, #F5FFFB 31.04%, #FFFFFF 100%);
 height: 96px;
 
-:hover {
-  button {
- background-color: rgba(81, 81, 81, 0.6);
-}
-  }
-
 @media (max-width: 771px) {
     .login-button {
     display: none;
