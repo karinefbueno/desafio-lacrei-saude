@@ -20,6 +20,11 @@ display: flex;
 justify-content: center;
 `;
 
+export const Border = styled.div`
+width: 160px;
+border: 1px solid rgba(1, 135, 98, 1);
+`;
+
 export const ContainerMain = styled.div`
 background-color: white;
 display: flex;
@@ -42,11 +47,6 @@ margin-top: 0px;
 font-size: 48px;
 text-align: start;
 } 
-
-span {
-color: rgba(1, 135, 98, 1);
-height: 6px;
-};
 
 p {
 margin-top:16px ;
@@ -99,22 +99,20 @@ height:491px;
 position: absolute;
 }`;
 
-export const MediumPinkDiv = styled.div`
+export const PinkBox = styled.div`
+width: auto;
+background-color:  rgba(255, 0, 0, 0.1);
+`;
+export const MediumPinkDiv = styled(PinkBox)`
 height: 48px;
-width: 100%;
-background-color: rgba(255, 0, 0, 0.1);
 `;
 
-export const SmallPinkDiv = styled.div`
+export const SmallPinkDiv = styled(PinkBox)`
 height: 32px;
-width: auto;
-background-color: rgba(255, 0, 0, 0.1);
 `;
 
-export const LargePinkDiv = styled.div`
+export const LargePinkDiv = styled(PinkBox)`
 height: 64px;
-width: auto;
-background-color: rgba(255, 0, 0, 0.1);
 `;
 
 export const YellowDiv = styled.div`
@@ -129,16 +127,25 @@ height: 251px;
 width: auto;
 `;
 
-export const ButtonBuscar = styled.button`
-  color: white;
-  background-color: rgba(1, 135, 98, 1);
-  border: none;
-  margin-right: 24px;
-  margin-left: 24px;
+export const Button = styled.button`
+  font-weight: 700;
+  font-size: 18px;
+  height:48px;
+  background-color: ${(props) => props.color ? props.color : 'rgba(1, 135, 98, 1)'};
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+`
+
+export const ButtonBuscar = styled(Button)`
+color: white;
+border: none;
+margin-right: 24px;
+margin-left: 24px;
 `;
 
-export const ButtonOferecer = styled.button`
-  border: 2px solid rgba(1, 135, 98, 1);
-  color: rgba(1, 135, 98, 1);
-  background-color: white;
+export const ButtonOferecer = styled(Button)`
+border: 2px solid rgba(1, 135, 98, 1);
+color: rgba(1, 135, 98, 1);
+background-color: white;
 `;

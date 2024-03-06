@@ -1,7 +1,7 @@
 import {
   ButtonBuscar, ButtonOferecer, ContainerMain,
   TitleContainer, MainStyled, SectionUm, Div,
-  BlueDiv, MediumPinkDiv, SmallPinkDiv, LargePinkDiv, YellowDiv,
+  BlueDiv, MediumPinkDiv, SmallPinkDiv, LargePinkDiv, YellowDiv, Border,
 } from './styles';
 import imgHero from '../../images/ImagemHero.png';
 import { buscar, oferecer } from '../../utils/links';
@@ -20,7 +20,7 @@ function Main() {
                 <br />
                 nossa comunidade
               </h2>
-              <span>___________________</span>
+              <Border />
               <p>
                 Encontre atendimento clínico de qualidade ou entre para
                 o time de profissionais da Lacrei Saúde.
