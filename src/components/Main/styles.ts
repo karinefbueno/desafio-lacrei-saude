@@ -87,7 +87,7 @@ text-align: start;
   }
 }`;
 
-export const SectionDois = styled.div`
+export const BlueDiv = styled.div`
 
 @media (min-width: 1100px) {
 

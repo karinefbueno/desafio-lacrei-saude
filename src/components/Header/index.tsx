@@ -2,10 +2,7 @@ import { BsPerson } from 'react-icons/bs';
 import { AiOutlineQuestionCircle } from 'react-icons/ai';
 import logo from '../../images/logo_header.png';
 import { HeaderStyled, ContainerHeader, LoginMobile, Login } from './styles';
-
-const ajuda = "https://lacreisaude.com.br/ajuda/";
-const quemSomos = "https://lacreisaude.com.br/quem-somos/";
-const entrar = "https://lacreisaude.com.br/selecionar-pessoa/";
+import { entrar, ajuda, quemSomos } from '../../utils/links';
 
 function Header() {
   return (
