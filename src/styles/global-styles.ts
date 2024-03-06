@@ -2,13 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
-  @font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 200;
-    src: url('https://fonts.gstatic.com/s/nunito/v16/XRXV3I6Li01BKofINeaBTMnFcQIG.ttf') format('truetype');
-  }
-
   :root {
     --font-family: 'Nunito', sans-serif;
   }
