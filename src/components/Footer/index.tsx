@@ -1,4 +1,7 @@
-import { ContainerFooter, FooterStyled, ImagemLogo, Div } from './styles';
+import {
+  ContainerFooter, FooterStyled, Div,
+  InitialLink, BorderFooter, IconsMedias
+} from './styles';
 import logo from '../../images/log.png';
 import face from '../../images/facebook.png';
 import link from '../../images/linkdIn.png';
@@ -9,7 +12,7 @@ import {
   facebook, instagram, linkdIn, email,
   quemSomos, missao, proposito, acessibilidade,
   termos, privacidade, direitos, buscar, oferecer,
-} from "../../utils/links";
+} from '../../utils/links';
 
 function Footer() {
 
@@ -17,7 +20,7 @@ function Footer() {
     <Div>
       <FooterStyled>
         <ContainerFooter>
-          <ImagemLogo>
+          <IconsMedias>
             <img src={logo} alt="Logo" />
             <div>
               <a href={facebook} target="blank">
@@ -33,7 +36,7 @@ function Footer() {
                 <img src={emailIcon} alt="E-mail" />
               </a>
             </div>
-          </ImagemLogo>
+          </IconsMedias>
           <ul>
             <h2>Lacrei Saúde</h2>
             <a href={quemSomos}><li>Quem Somos</li></a>
@@ -55,6 +58,7 @@ function Footer() {
             <a href={direitos}><li>Direitos de Titular</li></a>
           </ul>
         </ContainerFooter>
+        <BorderFooter />
         <ContainerFooter>
           <div className="container-paragraph">
             <p>
@@ -75,10 +79,12 @@ function Footer() {
           </div>
           <div>
             <span>CNPJ: 51.265.351/0001-65</span>
-            <a href='#inicio'>
-              <img className="button-initial" src={button}
-                alt="Navega para o início da página" />
-            </a>
+            <InitialLink>
+              <a href='#inicio'>
+                <img className="button-initial" src={button}
+                  alt="Navega para o início da página" />
+              </a>
+            </InitialLink>
           </div>
         </ContainerFooter>
       </FooterStyled>

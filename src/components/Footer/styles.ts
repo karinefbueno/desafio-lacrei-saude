@@ -16,7 +16,7 @@ padding-top:30px;
 width: 85%;
 `;
 
-export const ImagemLogo = styled.footer`
+export const IconsMedias = styled.div`
 
 @media (max-width: 950px) {
 
@@ -45,10 +45,14 @@ img{
   height: 48px;
 }`;
 
+export const BorderFooter = styled.div`
+width:  90%;
+border: 1px solid rgba(178, 223, 208, 1);
+`;
+
 export const ContainerFooter = styled.div`
 display: flex;
 justify-content: space-between;
-border-bottom: 1px solid rgba(178, 223, 208, 1);
 color: rgba(81, 81, 81, 1);
 width: 100%;
 padding: 48px 24px;
@@ -76,17 +80,12 @@ a {
   color: rgba(81, 81, 81, 1);
 }
 
-.button-initial {
-  margin-left: 60px;  
-} 
-
 p{
   font-size: 14px;
   padding-bottom: 16px;
 }
 @media (max-width: 440px) {
  justify-content: flex-start;
-
 }
 
 @media (max-width: 950px) {
@@ -105,4 +104,12 @@ p{
    span {
   display: block;
  }
+}`;
+
+export const InitialLink = styled.div`
+margin-left: 30px;
+margin-bottom: 16px;
+
+img {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }`;

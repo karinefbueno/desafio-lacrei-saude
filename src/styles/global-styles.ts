@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
+
   :root {
     --font-family: 'Nunito', sans-serif;
   }
@@ -24,7 +25,6 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 700;
     font-size: 18px;
     height: 48px;
-    width: 232px;
     border-radius: 8px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   }

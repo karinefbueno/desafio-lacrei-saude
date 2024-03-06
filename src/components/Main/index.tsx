@@ -3,7 +3,7 @@ import {
   TitleContainer, MainStyled, SectionUm, Div,
   BlueDiv, MediumPinkDiv, SmallPinkDiv, LargePinkDiv, YellowDiv, Border,
 } from './styles';
-import imgHero from '../../images/ImagemHero.png';
+import imgWeb from '../../images/ImagemHero.png';
 import { buscar, oferecer } from '../../utils/links';
 
 function Main() {
@@ -38,7 +38,7 @@ function Main() {
             <YellowDiv />
           </SectionUm>
           <BlueDiv />
-          <img src={imgHero} alt="" />
+          <img src={imgWeb} alt="" />
         </MainStyled>
         <LargePinkDiv />
       </ContainerMain>

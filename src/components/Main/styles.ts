@@ -21,7 +21,7 @@ justify-content: center;
 `;
 
 export const Border = styled.div`
-width: 160px;
+width:  160px;
 border: 1px solid rgba(1, 135, 98, 1);
 `;
 
@@ -65,7 +65,6 @@ text-align: start;
     flex-direction: column;
     justify-content: flex-start;
   }  
-
 
   .button-container {
     display: flex;
@@ -128,14 +127,10 @@ width: auto;
 `;
 
 export const Button = styled.button`
-  font-weight: 700;
-  font-size: 18px;
-  height:48px;
+  width: 232px;
   background-color: ${(props) => props.color ? props.color : 'rgba(1, 135, 98, 1)'};
-  padding: 8px;
   border-radius: 8px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-`
+`;
 
 export const ButtonBuscar = styled(Button)`
 color: white;
