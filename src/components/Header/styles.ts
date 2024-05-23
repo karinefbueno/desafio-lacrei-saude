@@ -17,7 +17,7 @@ justify-content: space-between;
 background: linear-gradient(180deg, #F5FFFB 31.04%, #FFFFFF 100%);
 height: 96px;
 
-@media (max-width: 771px) {
+@media (max-width: 770px) {
     .login-button {
     display: none;
   }
